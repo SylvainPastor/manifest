@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4"/>
+
+  <remote  name="yocto"
+           fetch="git://git.yoctoproject.org"
+           revision="morty" />
+
+  <remote  name="oe"
+           fetch="git://git.openembedded.org"
+           revision="morty" />
+
+  <remote  name="qt5"
+           fetch="https://github.com/meta-qt5"
+           revision="morty" />
+
+  <remote name="yocto4rpi"
+           fetch="git://github.com/jumpnow"
+           revision="morty" />
+
+  <project path="sources/poky" name="poky" remote="yocto"/>
+  <project path="sources/meta-raspberrypi" name="meta-raspberrypi" remote="yocto"/>
+  <project path="sources/meta-openembedded" name="meta-openembedded" remote="oe"/>
+  <project path="sources/meta-qt5" name="meta-qt5" remote="qt5"/>
+  <project path="sources/meta-rpi" name="meta-rpi" remote="yocto4rpi"/>
+
+</manifest>
